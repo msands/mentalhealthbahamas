@@ -1,0 +1,38 @@
+header#header.navbar.navbar-inverse.navbar-fixed-top[role="banner"]
+  .container
+    .navbar-header
+      button.navbar-toggle[type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"]
+        span.sr-only
+          | Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand[href="#hero"]
+        | Mental Health 
+        span.lighter
+          | Bahamas
+    nav.collapse.navbar-collapse.bs-navbar-collapse.navbar-right[role="navigation"]
+      ul.nav.navbar-nav
+        li = link_to "Home", "#hero"
+        li = link_to "About", "#about"
+        li = link_to "Donate", "#donate"
+        li = link_to "Gallery", "#gallery"
+        / li = link_to "Testimonials", "#slider"
+        / li = link_to "FAQ", "#faq"
+        li = link_to "Contact", "#contactarea"
+section#hero.section
+  .container
+    .row
+      .col-md-5
+        .herotext
+          h1.wow.bounceInDown[data-wow-duration="1s" data-wow-delay="0.1s"]
+            | Mental Health Bahamas
+          p.lead.wow.zoomIn[data-wow-duration="2s" data-wow-delay="0.5s"]
+            | Through education and awareness, Mental Health Bahamas Organization will destigmatize conversation on depression, anxiety, suicide and much more, helping to create a healthier conversation surrounding mental health.
+          p
+            a.btn.btn-default.btn-lg.wow.fadeInLeft[href="#gallery" role="button"]
+              |  View Gallery 
+            |    
+            a.btn.btn-default.btn-lg.wow.fadeInRight[href="https://www.gofundme.com/f/supportafamily-hurricane-dorian-relief-fund" role="button" target="_blank"]
+              | #Support A Family
+      .col-md-7

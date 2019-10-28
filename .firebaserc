@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "mental-health-bahamas",
+    "landing": "mental-health-bahamas",
+    "staging": "mental-health-bahamas"
+  }
+}

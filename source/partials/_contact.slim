@@ -1,0 +1,44 @@
+section#contactarea.parallax.section[style="background-image: url(http://themepush.com/demo/runcharity/assets/img/map.png);"]
+  .wrapsection
+    .parallax-overlay[style="background-color: #1cbb9b;opacity:0.95;"]
+    .container
+      .row
+        .col-md-12
+          .maintitle
+            h3.section-title
+              | Get in Touch
+            p.lead
+              |  Please feel free to reach out to us
+          form#contact.text-left[action="https://formspree.io/info@mentalhealthbahamas.org" method="post"]
+            fieldset
+              .row
+                .col-md-4.wow.fadeIn.animated.animated[data-wow-delay="0.1s" data-wow-duration="2s"]
+                  label[for="name"]
+                    | Name
+                    span.required
+                      | *
+                  input#name[type="text" name="name" size="30" value="" required]
+                .col-md-4.wow.fadeIn.animated[data-wow-delay="0.3s" data-wow-duration="2s"]
+                  label[for="email"]
+                    | Email
+                    span.required
+                      | *
+                  input#email[type="email" name="_replyto" size="30" value="" required]
+                .col-md-4.wow.fadeIn.animated[data-wow-delay="0.3s" data-wow-duration="2s"]
+                  label[for="phone"]
+                    | Phone
+                  input#phone[type="text" name="phone" size="30" value=""]
+              .wow.fadeIn.animated[data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;"]
+                label[for="message"]
+                  | Message
+                  span.required
+                    | *
+                textarea#message[name="message" required]
+              .wow.fadeIn.animated[data-wow-delay="0.3" data-wow-duration="1.5s"]
+                input#submit[type="submit" name="submit" value="Send"]
+          #success
+            p.contactalert
+              |  Your message was sent succssfully! We will be in touch shortly. 
+          #error
+            p.contactalert
+              |  Something went wrong, try refreshing and submitting the form again. 
